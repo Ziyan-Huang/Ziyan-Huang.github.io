@@ -124,10 +124,20 @@ a:hover {
 }
 
 .icon {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 1.1em;
+  height: 1.1em;
   margin-right: 0.45em;
   color: #494e52;
+  vertical-align: -0.12em;
+}
+
+.icon-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .page {
