@@ -116,11 +116,15 @@ a:hover {
 }
 
 .author__urls a {
-  color: #494e52;
+  color: #3f95b1;
 }
 
 .author__urls a:hover {
   color: #52adc8;
+}
+
+.author__urls a .icon {
+  color: #3f95b1;
 }
 
 .icon {
