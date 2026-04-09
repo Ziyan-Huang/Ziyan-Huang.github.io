@@ -3,149 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Academic Homepage</title>
+    <title>Your Name</title>
     <meta
       name="description"
       content="Personal academic homepage for research, news, and publications."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="site-title" href="#top">Your Name</a>
-        <nav class="site-nav">
-          <a href="#publications">Publications</a>
-          <a href="#cv">CV</a>
+    <header class="masthead">
+      <div class="masthead__inner-wrap">
+        <nav class="greedy-nav">
+          <ul class="visible-links">
+            <li class="masthead__menu-item masthead__menu-item--lg">
+              <a href="/">Your Name</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a href="#publications">Publications</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a href="#cv">CV</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page" id="top">
-      <aside class="sidebar">
-        <div class="photo-frame">
-          <div class="photo-placeholder">Photo</div>
+    <main id="main" role="main">
+      <aside class="sidebar sticky">
+        <div class="author-profile">
+          <div class="author__avatar">
+            <div class="author__avatar-placeholder">Photo</div>
+          </div>
+
+          <div class="author__content">
+            <h3 class="author__name">Your Name</h3>
+            <p class="author__bio">Ph.D. Student at University Name</p>
+          </div>
+
+          <div class="author__urls-wrapper">
+            <ul class="author__urls social-icons">
+              <li class="author__desktop">
+                <span class="icon">●</span>
+                Shanghai, China
+              </li>
+              <li>
+                <a href="mailto:yourname@university.edu">
+                  <span class="icon">✉</span>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer">
+                  <span class="icon">☰</span>
+                  Google Scholar
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer">
+                  <span class="icon">◉</span>
+                  Github
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <h1 class="name">Your Name</h1>
-        <p class="role">Ph.D. Student at University Name</p>
-
-        <ul class="contact-list">
-          <li>Shanghai, China</li>
-          <li><a href="mailto:yourname@university.edu">Email</a></li>
-          <li><a href="#" target="_blank" rel="noreferrer">Google Scholar</a></li>
-          <li><a href="#" target="_blank" rel="noreferrer">GitHub</a></li>
-        </ul>
       </aside>
 
-      <section class="main-content">
-        <section class="content-section" id="about">
-          <h2>About</h2>
-          <ul class="bullet-list">
-            <li>
-              I am currently a Ph.D. student at the
-              <a href="#" target="_blank" rel="noreferrer">School of XXX</a>,
-              <a href="#" target="_blank" rel="noreferrer">University Name</a>,
-              advised by Prof. XXX.
-            </li>
-            <li>
-              My research interests cover Bioinformatics, AI for Science,
-              Medical Imaging, and Agent Systems.
-            </li>
-            <li>
-              Prior to this, I obtained my master's degree from XXX University
-              and my bachelor's degree from XXX University in China.
-            </li>
-            <li id="cv">
-              Click here to view my
-              <a href="#" target="_blank" rel="noreferrer">CV</a>. If you are
-              interested in collaboration, please feel free to
-              <a href="mailto:yourname@university.edu">mail me</a>.
-            </li>
-          </ul>
-        </section>
+      <article class="page">
+        <div class="page__inner-wrap">
+          <header>
+            <h1 class="page__title"></h1>
+          </header>
 
-        <section class="content-section" id="news">
-          <h2>Recent News</h2>
-          <ul class="bullet-list news-list">
-            <li>
-              Apr, 2026. Launched my new academic homepage and updated my
-              research profile.
-            </li>
-            <li>
-              Mar, 2026. Presented our latest work at a workshop on AI for
-              science.
-            </li>
-            <li>
-              Jan, 2026. Started a new collaboration on multimodal foundation
-              models for healthcare.
-            </li>
-            <li>
-              Sep, 2025. Joined the XXX Lab at University Name as a doctoral
-              researcher.
-            </li>
-            <li>
-              Jun, 2025. Submitted a first-author paper on biomedical multimodal
-              learning.
-            </li>
-          </ul>
-        </section>
+          <section class="page__content">
+            <h1>About</h1>
+            <ul>
+              <li>
+                I am currently a Ph.D. student at the
+                <a href="#" target="_blank" rel="noreferrer">School of XXX</a>,
+                <a href="#" target="_blank" rel="noreferrer">University Name</a>,
+                working with Prof. XXX.
+              </li>
+              <li>
+                My research interests cover Bioinformatics, AI4S, Raman
+                Spectroscopy, and Agent Systems.
+              </li>
+              <li>
+                Prior to now, I obtained my master degree in XXX University and
+                bachelor degree from XXX University in China.
+              </li>
+              <li id="cv">
+                Click here to view my
+                <a href="#" target="_blank" rel="noreferrer">Resume 2026</a>.
+                If you are interested in knowing more about me, please feel free
+                to
+                <a href="mailto:yourname@university.edu">mail me</a>.
+              </li>
+            </ul>
 
-        <section class="content-section" id="publications">
-          <h2>Selected Publications</h2>
+            <h1>Recent News</h1>
+            <ul>
+              <li>
+                Sep, 2025. Officially started a research collaboration with a
+                partner hospital and research team.
+              </li>
+              <li>
+                Apr, 2025. Assigned by my doctoral supervisor to assist in a
+                medical imaging research project.
+              </li>
+              <li>
+                Feb, 2025. My paper "Example Title for a Journal Paper" was
+                accepted by <strong>IEEE Journal of Biomedical and Health
+                Informatics</strong>.
+              </li>
+              <li>Nov, 2024. Attended an international winter school.</li>
+              <li>Oct, 2024. Attended MICCAI 2024 and presented my poster.</li>
+              <li>
+                Jun, 2024. My paper "Example MICCAI Paper Title" was accepted by
+                <strong>MICCAI 2024</strong>.
+              </li>
+              <li>
+                Dec, 2023. My co-authored paper was accepted by
+                <strong>Computer Methods and Programs in Biomedicine</strong>.
+              </li>
+              <li>Aug, 2022. Joined University Name.</li>
+            </ul>
 
-          <article class="publication">
-            <p class="publication-title">
-              Paper Title Goes Here: A Concise and Informative Research Title
-            </p>
-            <p class="publication-authors">
-              <strong>Your Name</strong>, Collaborator A, Collaborator B
-            </p>
-            <p class="publication-venue">Conference / Journal, 2026</p>
-            <p class="publication-links">
-              <a href="#" target="_blank" rel="noreferrer">Paper</a>
-              <span>/</span>
-              <a href="#" target="_blank" rel="noreferrer">Code</a>
-              <span>/</span>
-              <a href="#" target="_blank" rel="noreferrer">Project</a>
-            </p>
-          </article>
+            <h1 id="publications">Selected Publications</h1>
 
-          <article class="publication">
-            <p class="publication-title">
-              Another Research Work With a Brief Description of the Contribution
-            </p>
-            <p class="publication-authors">
-              Collaborator A, <strong>Your Name</strong>, Collaborator C
-            </p>
-            <p class="publication-venue">Journal Name, 2025</p>
-            <p class="publication-links">
-              <a href="#" target="_blank" rel="noreferrer">Paper</a>
-              <span>/</span>
-              <a href="#" target="_blank" rel="noreferrer">BibTeX</a>
-            </p>
-          </article>
+            <div class="publication-item">
+              <p>
+                <strong>Paper Title Goes Here: A Concise and Informative Research Title</strong>
+              </p>
+              <p><strong>Your Name</strong>, Collaborator A, Collaborator B</p>
+              <p>Conference / Journal, 2026</p>
+              <p>
+                <a href="#" target="_blank" rel="noreferrer">Paper</a>
+                |
+                <a href="#" target="_blank" rel="noreferrer">Code</a>
+                |
+                <a href="#" target="_blank" rel="noreferrer">Project</a>
+              </p>
+            </div>
 
-          <article class="publication">
-            <p class="publication-title">
-              A Third Example Publication for Your Homepage
-            </p>
-            <p class="publication-authors">
-              Collaborator D, Collaborator E, <strong>Your Name</strong>
-            </p>
-            <p class="publication-venue">Preprint, 2024</p>
-            <p class="publication-links">
-              <a href="#" target="_blank" rel="noreferrer">Paper</a>
-            </p>
-          </article>
-        </section>
-      </section>
+            <div class="publication-item">
+              <p>
+                <strong>Another Research Work With a Brief Description of the Contribution</strong>
+              </p>
+              <p>Collaborator A, <strong>Your Name</strong>, Collaborator C</p>
+              <p>Journal Name, 2025</p>
+              <p>
+                <a href="#" target="_blank" rel="noreferrer">Paper</a>
+                |
+                <a href="#" target="_blank" rel="noreferrer">BibTeX</a>
+              </p>
+            </div>
+          </section>
+        </div>
+      </article>
     </main>
   </body>
 </html>
