@@ -84,6 +84,15 @@ a:hover {
   font-size: 1rem;
 }
 
+.author__avatar-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #f2f3f3;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .author__name {
   margin: 0 0 0.25em;
   color: #494e52;
