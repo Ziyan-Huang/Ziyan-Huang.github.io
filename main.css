@@ -194,6 +194,78 @@ a:hover {
   margin: 0.2em 0;
 }
 
+.article-meta {
+  margin: -0.8em 0 1.4em;
+  color: #7a8288;
+  font-size: 1.05em;
+}
+
+.article-hero {
+  margin: 0 0 2em;
+}
+
+.article-hero img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.article-hero figcaption {
+  margin-top: 0.6em;
+  color: #7a8288;
+  font-size: 0.95em;
+}
+
+.article-body {
+  color: #353a3e;
+}
+
+.article-body p {
+  margin: 0 0 1em;
+}
+
+.article-body h2 {
+  margin-top: 1.6em;
+}
+
+.article-body table {
+  width: 100%;
+  margin: 1.2em 0 1.8em;
+  border-collapse: collapse;
+  font-size: 1.05em;
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.85em;
+  border: 1px solid #e4e7e8;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  color: #353a3e;
+  background: #f6f7f7;
+}
+
+.essay-list {
+  margin-top: 1em;
+}
+
+.essay-item {
+  padding-bottom: 1.3em;
+  margin-bottom: 1.3em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.essay-item p {
+  margin: 0.3em 0;
+}
+
+.essay-item__date {
+  color: #7a8288;
+}
+
 @media (max-width: 1060px) {
   #main {
     flex-direction: column;
@@ -229,5 +301,11 @@ a:hover {
 
   .page__content h1 {
     font-size: 2.3em;
+  }
+
+  .article-body table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
