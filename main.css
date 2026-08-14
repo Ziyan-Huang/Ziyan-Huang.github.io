@@ -354,10 +354,8 @@ h3 {
   margin-top: 0.9rem;
 }
 
-.home-columns {
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(17rem, 1fr);
-  gap: clamp(3rem, 7vw, 6rem);
+.home-writing {
+  max-width: 46rem;
 }
 
 .note-feature {
@@ -398,29 +396,6 @@ h3 {
   color: var(--accent);
   font-size: 0.875rem;
   font-weight: 700;
-}
-
-.updates-list {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--line);
-  list-style: none;
-}
-
-.updates-list li {
-  display: grid;
-  grid-template-columns: 5rem 1fr;
-  gap: 0.8rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.updates-list time {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 600;
 }
 
 /* Shared inner pages -------------------------------------------------- */
@@ -951,9 +926,6 @@ h3 {
     min-height: 15rem;
   }
 
-  .home-columns {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (min-width: 60rem) {
