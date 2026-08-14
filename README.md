@@ -17,6 +17,8 @@ The website is a simple static site built with HTML and CSS and hosted with GitH
 
 ## Publishing a Note
 
-When adding a note, update the article page, `blog.html`, the latest-note card in
-`index.html`, `feed.xml`, and `sitemap.xml`. Keep the site dependency-free and
-run the HTML, link, responsive-layout, and image-size checks before deployment.
+When adding a local note, update the article page, `blog.html`, the latest-writing
+card in `index.html`, `feed.xml`, and `sitemap.xml`. External writing belongs in
+`blog.html` and `feed.xml`, but not in the site-only sitemap. Keep the site
+dependency-free and run the HTML, link, responsive-layout, and image-size checks
+before deployment.

@@ -9,7 +9,7 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="alternate" type="application/atom+xml" title="Ziyan Huang's Notes" href="./feed.xml">
     <meta property="og:title" content="Blog | Ziyan Huang">
-    <meta property="og:description" content="关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。">
+    <meta property="og:description" content="关于医学 AI、智能体与多模态系统的个人思考和研究解读。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ziyan-huang.github.io/blog.html">
     <meta property="og:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
@@ -20,7 +20,7 @@
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Blog | Ziyan Huang">
-    <meta name="twitter:description" content="关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。">
+    <meta name="twitter:description" content="关于医学 AI、智能体与多模态系统的个人思考和研究解读。">
     <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
     <meta name="twitter:image:alt" content="Ziyan Huang — Medical AI Researcher">
     <link rel="stylesheet" href="./main.css?v=20260814-2">
@@ -43,27 +43,164 @@
       <section class="blog-intro" aria-labelledby="blog-title">
         <p class="eyebrow" lang="en">Ziyan's Notes</p>
         <h1 id="blog-title" lang="en">Research notes,<br><span>in the open.</span></h1>
-        <p class="blog-intro__copy">关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。这里记录长期形成的判断，而不只记录结果。</p>
+        <p class="blog-intro__copy">关于医学 AI、智能体与多模态系统。这里收录个人思考，以及对参与研究工作的公开解读。</p>
       </section>
 
-      <section class="post-list" aria-labelledby="latest-notes">
+      <section class="post-list" aria-labelledby="writing-title">
         <header class="post-list__heading" lang="en">
-          <h2 id="latest-notes">Latest note</h2>
+          <h2 id="writing-title">Writing</h2>
         </header>
 
-        <a class="post-card" href="./medical-image-segmentation-bitter-lesson.html">
-          <div class="post-card__topline">
-            <span class="post-tag" lang="en">Medical AI</span>
-            <span class="post-card__arrow" aria-hidden="true">↗</span>
-          </div>
-          <h3>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h3>
-          <p>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。真正重要的问题始终是：下一步做什么。</p>
-          <div class="post-card__meta" lang="en">
-            <time datetime="2026-05-26">May 26, 2026</time>
-            <span aria-hidden="true">·</span>
-            <span>6 min read</span>
-          </div>
-        </a>
+        <div class="writing-list">
+          <article class="writing-item">
+            <a class="writing-item__link" href="./medical-image-segmentation-bitter-lesson.html">
+              <div class="writing-item__meta" lang="en">
+                <time datetime="2026-05-26">May 26, 2026</time>
+                <span>Ziyan's Notes</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h3>
+                <p>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/2027098128516401059" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2026-04-13" lang="en">Apr 13, 2026</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>AAAI 2026 | GMAI-VL &amp; GMAI-VL-5.5M：通用医学多模态大模型与大规模数据集</h3>
+                <p>介绍面向通用医学 AI 的视觉—语言模型 GMAI-VL，以及包含 550 万样本的开放多模态数据集 GMAI-VL-5.5M。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/2023440446744011926" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2026-04-03" lang="en">Apr 3, 2026</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>Project Imaging-X：1000+ 医学影像数据集一站式导航</h3>
+                <p>系统整理 1000 多个开放医学影像数据集，为基础模型的数据选择与复用提供统一入口。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/2023335442427159721" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2026-04-03" lang="en">Apr 3, 2026</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>MedSegAgent：一个用于通用医学分割的模型选择与调度系统</h3>
+                <p>为何不再追求“一个模型做一切”，而用多智能体完成模型、数据集与标签选择。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/8851239334" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2024-11-28" lang="en">Nov 28, 2024</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>SegBook：面向三维医学图像分割的简单基线和指南</h3>
+                <p>以统一基线研究三维医学图像分割中的模型扩展、迁移能力与实践配置。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/3483194341" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2024-10-31" lang="en">Oct 31, 2024</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>NeurIPS 2024 | GMAI-MMBench：通用医疗 AI 的多模态大模型评测基准</h3>
+                <p>介绍用于系统评估医疗多模态大模型的综合基准及其设计。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/666176776" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2023-11-10" lang="en">Nov 10, 2023</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>A-Eval：大规模腹部多器官分割跨数据集评测 Benchmark</h3>
+                <p>从数据中心视角评估腹部多器官分割模型的跨数据集、跨模态泛化。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/664624663" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2023-11-02" lang="en">Nov 2, 2023</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>STU-Net：大规模有监督预训练的可迁移可扩展三维医学分割模型</h3>
+                <p>用大规模有监督预训练构建可扩展、可迁移的三维医学图像分割模型。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/664040269" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2023-10-30" lang="en">Oct 30, 2023</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>SAM-Med3D：三维医学图像上的通用分割模型</h3>
+                <p>面向体积医学图像的通用交互式分割模型，以及其开放数据与迁移能力。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+
+          <article class="writing-item">
+            <a class="writing-item__link" href="https://zhuanlan.zhihu.com/p/663629820" target="_blank" rel="noopener noreferrer">
+              <div class="writing-item__meta">
+                <time datetime="2023-10-27" lang="en">Oct 27, 2023</time>
+                <span>知乎 · GMAI 团队成果</span>
+              </div>
+              <div class="writing-item__body">
+                <h3>SAM-Med2D：打破自然图像与医学图像的领域鸿沟</h3>
+                <p>以大规模医学图像数据适配 Segment Anything，缩小自然图像与医学图像的领域差异。</p>
+              </div>
+              <span class="writing-item__arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">在新标签页打开知乎文章</span>
+            </a>
+          </article>
+        </div>
       </section>
     </main>
 
