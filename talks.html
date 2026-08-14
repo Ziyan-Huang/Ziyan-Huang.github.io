@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talks | Ziyan Huang</title>
     <meta name="description" content="Invited talks by Ziyan Huang on medical image analysis and scalable segmentation models.">
-    <link rel="canonical" href="https://ziyan-huang.github.io/talks.html">
+    <link rel="canonical" href="https://ziyan-huang.github.io/talks">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="alternate" type="application/atom+xml" title="Ziyan Huang's Notes" href="./feed.xml">
     <meta property="og:title" content="Talks | Ziyan Huang">
     <meta property="og:description" content="Invited talks on medical image analysis and scalable segmentation models.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ziyan-huang.github.io/talks.html">
+    <meta property="og:url" content="https://ziyan-huang.github.io/talks">
     <meta property="og:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -23,6 +23,12 @@
     <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
     <meta name="twitter:image:alt" content="Ziyan Huang — Medical AI Researcher">
     <link rel="stylesheet" href="./main.css?v=20260814-4">
+    <script>
+      if (window.location.hostname === "ziyan-huang.github.io" && window.location.pathname.endsWith(".html")) {
+        const cleanPath = window.location.pathname.slice(0, -5);
+        window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -31,9 +37,9 @@
       <div class="site-shell site-header__inner">
         <a class="site-brand" href="/">Ziyan Huang</a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="./publications.html">Publications</a>
-          <a href="./blog.html">Writing</a>
-          <a href="./talks.html" aria-current="page">Talks</a>
+          <a href="/publications">Publications</a>
+          <a href="/blog">Writing</a>
+          <a href="/talks" aria-current="page">Talks</a>
         </nav>
       </div>
     </header>

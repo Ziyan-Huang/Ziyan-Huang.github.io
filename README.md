@@ -6,6 +6,10 @@ This repository contains the source code for Ziyan Huang's personal academic hom
 
 The website is a simple static site built with HTML and CSS and hosted with GitHub Pages.
 
+Public links use GitHub Pages' extensionless aliases (for example,
+`/publications` rather than `/publications.html`). Keep internal links,
+canonical URLs, the Atom feed, and the sitemap aligned with those clean URLs.
+
 ## Main Files
 
 - `index.html`: homepage content

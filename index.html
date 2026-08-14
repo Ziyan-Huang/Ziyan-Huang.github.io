@@ -26,6 +26,12 @@
     <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
     <meta name="twitter:image:alt" content="Ziyan Huang — Medical AI Researcher">
     <link rel="stylesheet" href="./main.css?v=20260814-4">
+    <script>
+      if (window.location.hostname === "ziyan-huang.github.io" && window.location.pathname.endsWith(".html")) {
+        const cleanPath = window.location.pathname === "/index.html" ? "/" : window.location.pathname.slice(0, -5);
+        window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -77,9 +83,9 @@
       <div class="site-shell site-header__inner">
         <a class="site-brand" href="/" aria-current="page">Ziyan Huang</a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="./publications.html">Publications</a>
-          <a href="./blog.html">Writing</a>
-          <a href="./talks.html">Talks</a>
+          <a href="/publications">Publications</a>
+          <a href="/blog">Writing</a>
+          <a href="/talks">Talks</a>
         </nav>
       </div>
     </header>
@@ -157,7 +163,7 @@
           </article>
         </div>
 
-        <p class="section-link"><a href="./publications.html">View all selected publications <span aria-hidden="true">→</span></a></p>
+        <p class="section-link"><a href="/publications">View all selected publications <span aria-hidden="true">→</span></a></p>
       </section>
 
       <section class="site-shell section section--compact" aria-labelledby="latest-writing-title">
@@ -166,13 +172,13 @@
             <p class="eyebrow">Writing</p>
             <h2 id="latest-writing-title">Latest writing</h2>
           </header>
-          <a class="note-feature" href="./medical-image-segmentation-bitter-lesson.html">
+          <a class="note-feature" href="/medical-image-segmentation-bitter-lesson">
             <span class="note-feature__meta">May 26, 2026 · Ziyan's Notes</span>
             <strong lang="zh-CN">医学图像分割的 Bitter Lesson：从中心任务回到临床接口</strong>
             <span lang="zh-CN">分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</span>
             <span class="note-feature__link">Read note <span aria-hidden="true">→</span></span>
           </a>
-          <p class="section-link section-link--compact"><a href="./blog.html">View all writing <span aria-hidden="true">→</span></a></p>
+          <p class="section-link section-link--compact"><a href="/blog">View all writing <span aria-hidden="true">→</span></a></p>
         </div>
       </section>
     </main>

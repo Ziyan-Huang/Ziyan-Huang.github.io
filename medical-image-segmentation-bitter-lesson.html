@@ -11,7 +11,7 @@
     <meta property="og:title" content="医学图像分割的 Bitter Lesson：从中心任务回到临床接口">
     <meta property="og:description" content="分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html">
+    <meta property="og:url" content="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson">
     <meta property="og:image" content="https://ziyan-huang.github.io/assets/medical-segmentation-interface-og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -25,10 +25,16 @@
     <meta name="twitter:description" content="分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。">
     <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/medical-segmentation-interface-og.jpg">
     <meta name="twitter:image:alt" content="医学图像分割作为临床行动闭环中的中间接口">
-    <link rel="canonical" href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html">
+    <link rel="canonical" href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="alternate" type="application/atom+xml" title="Ziyan Huang's Notes" href="./feed.xml">
     <link rel="stylesheet" href="./main.css?v=20260814-4">
+    <script>
+      if (window.location.hostname === "ziyan-huang.github.io" && window.location.pathname.endsWith(".html")) {
+        const cleanPath = window.location.pathname.slice(0, -5);
+        window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -42,7 +48,7 @@
           "url": "https://ziyan-huang.github.io/"
         },
         "image": "https://ziyan-huang.github.io/assets/medical-segmentation-interface-og.jpg",
-        "mainEntityOfPage": "https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html",
+        "mainEntityOfPage": "https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson",
         "inLanguage": "zh-CN"
       }
     </script>
@@ -54,9 +60,9 @@
       <div class="site-shell site-header__inner">
         <a class="site-brand" href="/">Ziyan Huang</a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="./publications.html">Publications</a>
-          <a href="./blog.html" aria-current="page">Writing</a>
-          <a href="./talks.html">Talks</a>
+          <a href="/publications">Publications</a>
+          <a href="/blog" aria-current="page">Writing</a>
+          <a href="/talks">Talks</a>
         </nav>
       </div>
     </header>
@@ -64,7 +70,7 @@
     <main id="main" class="article-main">
       <article class="longform-article">
         <header class="article-header">
-          <a class="article-kicker" href="./blog.html" lang="en">Notes / Medical AI</a>
+          <a class="article-kicker" href="/blog" lang="en">Notes / Medical AI</a>
           <h1>医学图像分割的 Bitter Lesson：<span class="title-tail">从中心任务回到临床接口</span></h1>
           <p class="article-deck">分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</p>
           <div class="article-byline" lang="en">
@@ -171,7 +177,7 @@
         </section>
 
         <footer class="article-footer" lang="en">
-          <a href="./blog.html"><span aria-hidden="true">←</span> Back to all notes</a>
+          <a href="/blog"><span aria-hidden="true">←</span> Back to all notes</a>
           <span>Written by Ziyan Huang</span>
         </footer>
       </article>

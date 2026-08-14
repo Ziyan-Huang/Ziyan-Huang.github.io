@@ -3,16 +3,16 @@
   <title>Ziyan Huang's Notes</title>
   <subtitle>Research notes on medical AI, agents, and the systems around them.</subtitle>
   <link href="https://ziyan-huang.github.io/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://ziyan-huang.github.io/blog.html" rel="alternate" type="text/html" />
+  <link href="https://ziyan-huang.github.io/blog" rel="alternate" type="text/html" />
   <id>https://ziyan-huang.github.io/</id>
-  <updated>2026-08-14T18:48:02+08:00</updated>
+  <updated>2026-08-14T19:52:02+08:00</updated>
   <author>
     <name>Ziyan Huang</name>
     <uri>https://ziyan-huang.github.io/</uri>
   </author>
   <entry>
     <title>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</title>
-    <link href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html" />
+    <link href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson" />
     <id>https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html</id>
     <published>2026-05-26T19:02:35+08:00</published>
     <updated>2026-05-26T19:02:35+08:00</updated>
