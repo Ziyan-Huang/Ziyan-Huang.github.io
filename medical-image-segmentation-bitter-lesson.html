@@ -8,9 +8,15 @@
       name="description"
       content="医学图像分割作为医学影像 AI 默认中心任务的合理性正在被削弱。"
     />
-    <link rel="stylesheet" href="./main.css?v=20260526-1" />
+    <meta property="og:title" content="医学图像分割的 Bitter Lesson：从中心任务回到临床接口" />
+    <meta property="og:description" content="分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://ziyan-huang.github.io/assets/medical-segmentation-interface.png" />
+    <meta property="article:published_time" content="2026-05-26T19:02:35+08:00" />
+    <link rel="canonical" href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html" />
+    <link rel="stylesheet" href="./main.css?v=20260814-1" />
   </head>
-  <body>
+  <body class="blog-page article-page">
     <header class="masthead">
       <div class="masthead__inner-wrap">
         <nav class="greedy-nav">
@@ -25,110 +31,76 @@
               <a href="./publications.html">Publications</a>
             </li>
             <li class="masthead__menu-item">
-              <a href="./blog.html">Blog</a>
+              <a href="./blog.html" aria-current="true">Blog</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="main" role="main">
-      <aside class="sidebar sticky">
-        <div class="author-profile">
-          <div class="author__avatar">
-            <img src="./photo.jpg" alt="Ziyan Huang" class="author__avatar-image" />
+    <main id="main" class="article-main" role="main">
+      <article class="longform-article">
+        <header class="article-header">
+          <a class="article-kicker" href="./blog.html">Notes / Medical AI</a>
+          <h1>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h1>
+          <p class="article-deck">分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</p>
+          <div class="article-byline">
+            <time datetime="2026-05-26">May 26, 2026</time>
+            <span aria-hidden="true">·</span>
+            <span>6 min read</span>
+            <span aria-hidden="true">·</span>
+            <span>Ziyan Huang</span>
           </div>
+        </header>
 
-          <div class="author__content">
-            <h3 class="author__name">Ziyan Huang</h3>
-            <p class="author__bio">Researcher at Shanghai AI Laboratory</p>
-          </div>
+        <figure class="article-hero">
+          <img
+            src="./assets/medical-segmentation-interface.png"
+            alt="医学图像分割作为临床行动闭环中的中间接口"
+            width="1672"
+            height="941"
+            fetchpriority="high"
+          />
+          <figcaption>分割提供空间信息，但临床系统最终要回答的是诊断、风险、治疗与随访中的行动问题。</figcaption>
+        </figure>
 
-          <div class="author__urls-wrapper">
-            <ul class="author__urls social-icons">
-              <li class="author__desktop">
-                <span class="icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" class="icon-svg">
-                    <path d="M12 21s-6-5.33-6-11a6 6 0 1 1 12 0c0 5.67-6 11-6 11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="12" cy="10" r="2.5" fill="currentColor"/>
-                  </svg>
-                </span>
-                Shanghai, China
-              </li>
-              <li>
-                <a href="mailto:hzy954107396@gmail.com">
-                  <span class="icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" class="icon-svg">
-                      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                      <path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </span>
-                  Email
-                </a>
-              </li>
-              <li>
-                <a href="https://scholar.google.com/citations?user=BshL3fUAAAAJ&hl=en" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" class="icon-svg">
-                      <path d="M12 4 3 9l9 5 9-5-9-5Z" fill="currentColor"/>
-                      <path d="M7 12v3.5C7 17.43 9.24 19 12 19s5-1.57 5-3.5V12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </span>
-                  Google Scholar
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/Ziyan-Huang" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" class="icon-svg">
-                      <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.08 1.84 2.82 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.42 11.42 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.59-2.81 5.61-5.49 5.91.43.38.82 1.11.82 2.24v3.32c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z" fill="currentColor"/>
-                    </svg>
-                  </span>
-                  Github
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </aside>
+        <details class="article-toc" open>
+          <summary>目录</summary>
+          <ol>
+            <li><a href="#false-center">为什么分割会成为“伪中心”</a></li>
+            <li><a href="#maskification">医学问题被“Mask 化”</a></li>
+            <li><a href="#interface">从“中心”回到“接口”</a></li>
+            <li><a href="#clinical-loop">转向临床行动闭环</a></li>
+          </ol>
+        </details>
 
-      <article class="page">
-        <div class="page__inner-wrap">
-          <section class="page__content article-body">
-            <h1>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h1>
-            <p class="article-meta">May 26, 2026</p>
+        <section class="article-body">
+          <p class="article-lead">医学图像分割作为医学影像 AI 研究生态中“默认中心任务”的合理性，正在被削弱。</p>
+          <p>医学里真正重要的问题，从来不只是“边界在哪里”，而是“下一步做什么”。但在过去十年的研究中，这些复杂的临床诉求常常被简化为一个容易被机器学习处理的代理任务：输入图像，输出 Mask，计算 Dice。</p>
+          <p>这便是医学图像分割的 Bitter Lesson：它并非没有价值，而是因为它太适合被研究了。它没有真正解决医学影像智能的核心挑战，而是把问题改写成了机器学习最擅长的形状。</p>
 
-            <figure class="article-hero">
-              <img
-                src="./assets/medical-segmentation-interface.png"
-                alt="医学图像分割作为临床行动闭环中的中间接口"
-              />
-              <figcaption>分割提供空间信息，但临床系统最终要回答的是诊断、风险、治疗与随访中的行动问题。</figcaption>
-            </figure>
+          <blockquote class="article-callout">真正重要的问题，从来不只是“边界在哪里”，而是“下一步做什么”。</blockquote>
 
-            <p>医学图像分割作为医学影像 AI 研究生态中“默认中心任务”的合理性，正在被削弱。</p>
-            <p>医学里真正重要的问题，从来不只是“边界在哪里”，而是“下一步做什么”。但在过去十年的研究中，这些复杂的临床诉求常常被简化为一个容易被机器学习处理的代理任务：输入图像，输出 Mask，计算 Dice。</p>
-            <p>这便是医学图像分割的 Bitter Lesson：它并非没有价值，而是因为它太适合被研究了。它没有真正解决医学影像智能的核心挑战，而是把问题改写成了机器学习最擅长的形状。</p>
+          <h2 id="false-center">一、为什么分割会成为“伪中心”？</h2>
+          <p>原因并不复杂。医学中真正有价值的反馈来自诊断、治疗、随访和结局；但这些反馈周期长、成本高、噪声大，且极难标准化。相比之下，分割提供了一个近乎完美的闭环。</p>
+          <p><strong>可规模化的反馈接口：</strong>图像进来，专家画 Mask，模型预测 Mask，指标评价 Mask。这种“图像到图像”的映射让分割天然适合构建数据集、举办挑战赛和刷排行榜。</p>
+          <p><strong>学术生产的标准化结构：</strong>一旦任务具备了清楚的标签、统一的指标和成熟的基线，它就变成了一种高效的论文生产机器。研究者可以围绕损失函数、网络模块、预训练策略或后处理不断制造增量。</p>
+          <p><strong>系统的放大效应：</strong>学术评价体系会系统性地放大那些“容易被比较”的进步，例如 Dice 提升了 0.5%，而弱化那些“难被标准化”但更接近临床价值的问题。</p>
+          <p><strong>nnU-Net 的出现是一个分水岭。</strong>它证明了分割领域的很多所谓“结构创新”，其价值往往不如一个高度系统化的 Pipeline：预处理、训练配置、后处理的集合。如果大量新方法的进步仅依赖于特定的数据划分或实现细节，我们更应追问：这种增量是否仍然值得占据如此多的研究注意力？</p>
 
-            <h2>一、为什么分割会成为“伪中心”？</h2>
-            <p>原因并不复杂。医学中真正有价值的反馈来自诊断、治疗、随访和结局；但这些反馈周期长、成本高、噪声大，且极难标准化。相比之下，分割提供了一个近乎完美的闭环。</p>
-            <p><strong>可规模化的反馈接口：</strong>图像进来，专家画 Mask，模型预测 Mask，指标评价 Mask。这种“图像到图像”的映射让分割天然适合构建数据集、举办挑战赛和刷排行榜。</p>
-            <p><strong>学术生产的标准化结构：</strong>一旦任务具备了清楚的标签、统一的指标和成熟的基线，它就变成了一种高效的论文生产机器。研究者可以围绕损失函数、网络模块、预训练策略或后处理不断制造增量。</p>
-            <p><strong>系统的放大效应：</strong>学术评价体系会系统性地放大那些“容易被比较”的进步，例如 Dice 提升了 0.5%，而弱化那些“难被标准化”但更接近临床价值的问题。</p>
-            <p><strong>nnU-Net 的出现是一个分水岭。</strong>它证明了分割领域的很多所谓“结构创新”，其价值往往不如一个高度系统化的 Pipeline：预处理、训练配置、后处理的集合。如果大量新方法的进步仅依赖于特定的数据划分或实现细节，我们更应追问：这种增量是否仍然值得占据如此多的研究注意力？</p>
+          <h2 id="maskification">二、苦涩之处：医学问题被“Mask 化”了</h2>
+          <p>更深层的问题在于：Mask 本身就是一种人为设计的中间表征。</p>
+          <p>在临床语境中，Mask 是医生为了沟通、规划、标注或系统交互而形成的工作产物。它虽有用，但绝非医学问题的终极形式。只要模型的目标仍是复刻人类画出的 Mask，它学到的就只是被压缩后的工作产物，而非医疗决策背后的逻辑。</p>
 
-            <h2>二、苦涩之处：医学问题被“Mask 化”了</h2>
-            <p>更深层的问题在于：Mask 本身就是一种人为设计的中间表征。</p>
-            <p>在临床语境中，Mask 是医生为了沟通、规划、标注或系统交互而形成的工作产物。它虽有用，但绝非医学问题的终极形式。只要模型的目标仍是复刻人类画出的 Mask，它学到的就只是被压缩后的工作产物，而非医疗决策背后的逻辑。</p>
+          <h3>空间智能 vs 医疗智能</h3>
+          <p>分割将医学影像智能压缩成了空间智能。它擅长回答：哪里有东西？边界在哪里？体积有多大？离周围结构多远？</p>
+          <p>但医学的核心是时间、风险与行动：这是病变进展还是治疗反应？是否需要立即干预，还是继续观察？它与病史、检验、病理结果是否一致？</p>
+          <p>分割真正的 Bitter Lesson 不是“我们还没把边界画准”，而是“我们误把画边界当成了医学影像 AI 的终极目标”。</p>
 
-            <h2>空间智能 vs 医疗智能</h2>
-            <p>分割将医学影像智能压缩成了空间智能。它擅长回答：哪里有东西？边界在哪里？体积有多大？离周围结构多远？</p>
-            <p>但医学的核心是时间、风险与行动：这是病变进展还是治疗反应？是否需要立即干预，还是继续观察？它与病史、检验、病理结果是否一致？</p>
-            <p>分割真正的 Bitter Lesson 不是“我们还没把边界画准”，而是“我们误把画边界当成了医学影像 AI 的终极目标”。</p>
+          <h2 id="interface">三、重新定义分割：从“中心”回到“接口”</h2>
+          <p>为了打破这种“Mask 迷思”，我们需要重新梳理分割在临床任务中的真实位置。医学影像任务可以分为三类：</p>
 
-            <h2>三、重新定义分割：从“中心”回到“接口”</h2>
-            <p>为了打破这种“Mask 迷思”，我们需要重新梳理分割在临床任务中的真实位置。医学影像任务可以分为三类：</p>
-
+          <div class="article-table-wrap">
             <table>
               <thead>
                 <tr>
@@ -155,21 +127,26 @@
                 </tr>
               </tbody>
             </table>
+          </div>
 
-            <h2>统一模型的误区</h2>
-            <p>目前的趋势是开发“统一分割模型”。虽然在工程上实现了从“多个小模型”到“一个大模型”的跃迁，增强了复用性，但其底层逻辑并未改变：医学问题依然被翻译成“哪里需要被圈出来”。</p>
+          <h3>统一模型的误区</h3>
+          <p>目前的趋势是开发“统一分割模型”。虽然在工程上实现了从“多个小模型”到“一个大模型”的跃迁，增强了复用性，但其底层逻辑并未改变：医学问题依然被翻译成“哪里需要被圈出来”。</p>
 
-            <h2>四、下一步：从中间对象转向临床行动闭环</h2>
-            <p>真正的转向，不应仅仅是从“分割模型”走向“多模态模型”，而是从“中间对象预测”转向“临床行动闭环”。</p>
-            <p><strong>多模态不仅是输入的增加：</strong>如果只是把影像、病史、检验拼凑在一起，却仍不接入临床行动反馈，它也只是换了一个更华丽的代理任务。</p>
-            <p><strong>分割的回归：</strong>在未来的系统中，分割应该作为一个“子程序”存在。它负责提供空间关系：体积、距离、形状。但系统的最终输出应是诊断建议、手术规划、风险预警或随访策略。</p>
+          <h2 id="clinical-loop">四、下一步：从中间对象转向临床行动闭环</h2>
+          <p>真正的转向，不应仅仅是从“分割模型”走向“多模态模型”，而是从“中间对象预测”转向“临床行动闭环”。</p>
+          <p><strong>多模态不仅是输入的增加：</strong>如果只是把影像、病史、检验拼凑在一起，却仍不接入临床行动反馈，它也只是换了一个更华丽的代理任务。</p>
+          <p><strong>分割的回归：</strong>在未来的系统中，分割应该作为一个“子程序”存在。它负责提供空间关系：体积、距离、形状。但系统的最终输出应是诊断建议、手术规划、风险预警或随访策略。</p>
 
-            <h2>结论</h2>
-            <p>医学图像分割的历史作用，是为 AI 接入医学影像提供了一个可训练、可比较、可发表的人造入口。但入口不应被误认为终点。</p>
-            <p>未来的研究重心，不应是把更多东西“分割”出来，也不应是把更多分割任务塞进同一个模型，而是要重新审视：什么时候医学问题确实需要几何对象，什么时候它需要的是逻辑、风险与决策。</p>
-            <p>让分割回到它更准确的位置：作为工具，而非中心；作为接口，而非目标。</p>
-          </section>
-        </div>
+          <h2 id="conclusion">结论</h2>
+          <p>医学图像分割的历史作用，是为 AI 接入医学影像提供了一个可训练、可比较、可发表的人造入口。但入口不应被误认为终点。</p>
+          <p>未来的研究重心，不应是把更多东西“分割”出来，也不应是把更多分割任务塞进同一个模型，而是要重新审视：什么时候医学问题确实需要几何对象，什么时候它需要的是逻辑、风险与决策。</p>
+          <p>让分割回到它更准确的位置：作为工具，而非中心；作为接口，而非目标。</p>
+        </section>
+
+        <footer class="article-footer">
+          <a href="./blog.html"><span aria-hidden="true">←</span> Back to all notes</a>
+          <span>Written by Ziyan Huang</span>
+        </footer>
       </article>
     </main>
   </body>
