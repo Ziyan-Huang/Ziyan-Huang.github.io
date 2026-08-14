@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Ziyan Huang</title>
-    <meta name="description" content="Research notes on medical AI, agents, and the systems around them by Ziyan Huang." />
-    <meta property="og:title" content="Blog | Ziyan Huang" />
-    <meta property="og:description" content="Research notes on medical AI, agents, and the systems around them." />
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://ziyan-huang.github.io/blog.html" />
-    <link rel="stylesheet" href="./main.css?v=20260814-1" />
+    <meta name="description" content="Research notes on medical AI, agents, and the systems around them by Ziyan Huang.">
+    <link rel="canonical" href="https://ziyan-huang.github.io/blog.html">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="alternate" type="application/atom+xml" title="Ziyan Huang's Notes" href="./feed.xml">
+    <meta property="og:title" content="Blog | Ziyan Huang">
+    <meta property="og:description" content="关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ziyan-huang.github.io/blog.html">
+    <meta property="og:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ziyan Huang — Medical AI Researcher">
+    <meta property="og:site_name" content="Ziyan Huang">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Ziyan Huang">
+    <meta name="twitter:description" content="关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。">
+    <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
+    <meta name="twitter:image:alt" content="Ziyan Huang — Medical AI Researcher">
+    <link rel="stylesheet" href="./main.css?v=20260814-2">
   </head>
-  <body class="blog-page blog-index-page">
-    <header class="masthead">
-      <div class="masthead__inner-wrap">
-        <nav class="greedy-nav">
-          <ul class="visible-links">
-            <li class="masthead__menu-item masthead__menu-item--lg">
-              <a href="./index.html">Ziyan Huang</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="./talks.html">Talks</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="./publications.html">Publications</a>
-            </li>
-            <li class="masthead__menu-item">
-              <a href="./blog.html" aria-current="page">Blog</a>
-            </li>
-          </ul>
+  <body class="blog-index-page">
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header" lang="en">
+      <div class="site-shell site-header__inner">
+        <a class="site-brand" href="/">Ziyan Huang</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./talks.html">Talks</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./blog.html" aria-current="page">Blog</a>
         </nav>
       </div>
     </header>
 
-    <main id="main" class="blog-main" role="main">
-      <div class="blog-container">
-        <section class="blog-intro" aria-labelledby="blog-title">
-          <p class="blog-eyebrow">ZIYAN'S NOTES</p>
-          <h1 id="blog-title">Research notes,<br /><span>in the open.</span></h1>
-          <p class="blog-intro__copy">关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。这里记录长期形成的判断，而不只记录结果。</p>
-          <div class="blog-intro__links" aria-label="Author links">
-            <a href="./index.html">About</a>
-            <a href="https://scholar.google.com/citations?user=BshL3fUAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Scholar</a>
-            <a href="https://github.com/Ziyan-Huang" target="_blank" rel="noreferrer">GitHub</a>
+    <main id="main" class="blog-main">
+      <section class="blog-intro" aria-labelledby="blog-title">
+        <p class="eyebrow" lang="en">Ziyan's Notes</p>
+        <h1 id="blog-title" lang="en">Research notes,<br><span>in the open.</span></h1>
+        <p class="blog-intro__copy">关于医学 AI、智能体，以及连接研究与真实临床问题的系统性思考。这里记录长期形成的判断，而不只记录结果。</p>
+      </section>
+
+      <section class="post-list" aria-labelledby="latest-notes">
+        <header class="post-list__heading" lang="en">
+          <h2 id="latest-notes">Latest note</h2>
+        </header>
+
+        <a class="post-card" href="./medical-image-segmentation-bitter-lesson.html">
+          <div class="post-card__topline">
+            <span class="post-tag" lang="en">Medical AI</span>
+            <span class="post-card__arrow" aria-hidden="true">↗</span>
           </div>
-        </section>
-
-        <section class="post-list" aria-labelledby="latest-notes">
-          <div class="post-list__heading">
-            <h2 id="latest-notes">Latest notes</h2>
-            <span>1 post</span>
+          <h3>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h3>
+          <p>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。真正重要的问题始终是：下一步做什么。</p>
+          <div class="post-card__meta" lang="en">
+            <time datetime="2026-05-26">May 26, 2026</time>
+            <span aria-hidden="true">·</span>
+            <span>6 min read</span>
           </div>
-
-          <a class="post-card" href="./medical-image-segmentation-bitter-lesson.html">
-            <div class="post-card__topline">
-              <span class="post-tag">Medical AI</span>
-              <span class="post-card__arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</h3>
-            <p>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。真正重要的问题始终是：下一步做什么。</p>
-            <div class="post-card__meta">
-              <time datetime="2026-05-26">May 26, 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>6 min read</span>
-            </div>
-          </a>
-        </section>
-
-        <footer class="blog-footer">
-          <span>© 2026 Ziyan Huang</span>
-          <span>Research notes from Shanghai</span>
-        </footer>
-      </div>
+        </a>
+      </section>
     </main>
+
+    <footer class="site-footer" lang="en">
+      <div class="site-shell site-footer__inner">
+        <span>© 2026 Ziyan Huang</span>
+        <nav aria-label="Footer links">
+          <a href="./feed.xml">RSS</a>
+          <a href="https://scholar.google.com/citations?user=BshL3fUAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Scholar</a>
+          <a href="https://github.com/Ziyan-Huang" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+  <title>Ziyan Huang's Notes</title>
+  <subtitle>Research notes on medical AI, agents, and the systems around them.</subtitle>
+  <link href="https://ziyan-huang.github.io/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://ziyan-huang.github.io/blog.html" rel="alternate" type="text/html" />
+  <id>https://ziyan-huang.github.io/</id>
+  <updated>2026-05-26T19:02:35+08:00</updated>
+  <author>
+    <name>Ziyan Huang</name>
+    <uri>https://ziyan-huang.github.io/</uri>
+  </author>
+  <entry>
+    <title>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</title>
+    <link href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html" />
+    <id>https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson.html</id>
+    <published>2026-05-26T19:02:35+08:00</published>
+    <updated>2026-05-26T19:02:35+08:00</updated>
+    <summary>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</summary>
+  </entry>
+</feed>
