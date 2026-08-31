@@ -5,11 +5,19 @@
   <link href="https://ziyan-huang.github.io/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ziyan-huang.github.io/blog" rel="alternate" type="text/html" />
   <id>https://ziyan-huang.github.io/</id>
-  <updated>2026-08-14T19:52:02+08:00</updated>
+  <updated>2026-08-31T20:54:07+08:00</updated>
   <author>
     <name>Ziyan Huang</name>
     <uri>https://ziyan-huang.github.io/</uri>
   </author>
+  <entry>
+    <title>医学 AI 的下半场：以证据为中心</title>
+    <link href="https://ziyan-huang.github.io/medical-ai-second-half" />
+    <id>https://ziyan-huang.github.io/medical-ai-second-half</id>
+    <published>2026-08-31T20:54:07+08:00</published>
+    <updated>2026-08-31T20:54:07+08:00</updated>
+    <summary>让 AI 进入医学认识患者、应用证据、选择行动并检验结局的完整链条。</summary>
+  </entry>
   <entry>
     <title>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</title>
     <link href="https://ziyan-huang.github.io/medical-image-segmentation-bitter-lesson" />

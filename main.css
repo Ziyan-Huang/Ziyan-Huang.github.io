@@ -668,6 +668,10 @@ h3 {
   letter-spacing: -0.055em;
 }
 
+.article-header .title-phrase {
+  white-space: nowrap;
+}
+
 .article-deck {
   max-width: 43rem;
   margin: 1.35rem 0 0;
@@ -771,6 +775,69 @@ h3 {
   margin: 1.8em 0 0.65em;
   font-size: 1.28em;
   line-height: 1.4;
+}
+
+.article-body code {
+  padding: 0.08em 0.3em;
+  border-radius: 0.25rem;
+  color: var(--ink);
+  background: var(--surface);
+  font-size: 0.9em;
+}
+
+.citation {
+  white-space: nowrap;
+  font-size: 0.82em;
+  font-weight: 650;
+  text-decoration: none;
+  vertical-align: 0.08em;
+}
+
+.article-figure {
+  width: min(64rem, calc(100vw - (2 * var(--gutter))));
+  margin: 2.5rem 0 2.8rem 50%;
+  transform: translateX(-50%);
+}
+
+.article-figure > a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.article-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.article-figure figcaption {
+  max-width: var(--reading-max);
+  margin: 0.75rem auto 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.article-figure__hint {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--accent);
+  font-weight: 650;
+}
+
+.article-references {
+  padding-left: 1.35rem;
+  font-size: 0.84em;
+}
+
+.article-references li {
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+  scroll-margin-top: 5rem;
 }
 
 .article-callout {
