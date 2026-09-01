@@ -234,6 +234,16 @@ h3 {
   line-height: 1.75;
 }
 
+.hero__bio p {
+  margin: 0;
+}
+
+.hero__bio .hero__recruiting {
+  margin-bottom: 0.65rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .profile-links,
 .item-links {
   display: flex;
@@ -244,6 +254,29 @@ h3 {
 .profile-links {
   grid-area: links;
   margin-top: 1.6rem;
+}
+
+.profile-contact {
+  grid-area: links;
+  margin-top: 1.6rem;
+}
+
+.profile-contact .profile-links {
+  margin-top: 0;
+}
+
+.profile-address {
+  display: inline-flex;
+  min-height: 2rem;
+  max-width: 100%;
+  align-items: center;
+  padding-block: 0.25rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 0.65rem;
 }
 
 .profile-links a,
@@ -1079,6 +1112,10 @@ h3 {
   }
 
   .profile-links {
+    margin-top: 0.9rem;
+  }
+
+  .profile-contact {
     margin-top: 0.9rem;
   }
 
