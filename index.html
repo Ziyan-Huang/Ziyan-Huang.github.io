@@ -25,7 +25,7 @@
     <meta name="twitter:description" content="Research in medical image analysis, scalable foundation models, and multi-agent systems for medical discovery.">
     <meta name="twitter:image" content="https://ziyan-huang.github.io/assets/ziyan-huang-og.jpg">
     <meta name="twitter:image:alt" content="Ziyan Huang — Medical AI Researcher">
-    <link rel="stylesheet" href="./main.css?v=20260831-1">
+    <link rel="stylesheet" href="./main.css?v=20260901-1">
     <script>
       if (window.location.hostname === "ziyan-huang.github.io" && window.location.pathname.endsWith(".html")) {
         const cleanPath = window.location.pathname === "/index.html" ? "/" : window.location.pathname.slice(0, -5);
@@ -172,12 +172,31 @@
             <p class="eyebrow">Writing</p>
             <h2 id="latest-writing-title">Latest writing</h2>
           </header>
-          <a class="note-feature" href="/medical-ai-second-half">
-            <span class="note-feature__meta">Aug 31, 2026 · Ziyan's Notes</span>
-            <strong lang="zh-CN">医学 AI 的下半场：以证据为中心</strong>
-            <span lang="zh-CN">让 AI 进入医学认识患者、应用证据、选择行动并检验结局的完整链条。</span>
-            <span class="note-feature__link">Read note <span aria-hidden="true">→</span></span>
-          </a>
+          <div class="home-writing-list">
+            <a class="home-writing-item" href="/medical-ai-second-half">
+              <div class="home-writing-item__meta" lang="en">
+                <time datetime="2026-08-31">Aug 31, 2026</time>
+                <span>Ziyan's Notes</span>
+              </div>
+              <div class="home-writing-item__body" lang="zh-CN">
+                <strong>医学 AI 的下半场：以证据为中心</strong>
+                <span>让 AI 进入医学认识患者、应用证据、选择行动并检验结局的完整链条。</span>
+              </div>
+              <span class="home-writing-item__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="home-writing-item" href="/medical-image-segmentation-bitter-lesson">
+              <div class="home-writing-item__meta" lang="en">
+                <time datetime="2026-05-26">May 26, 2026</time>
+                <span>Ziyan's Notes</span>
+              </div>
+              <div class="home-writing-item__body" lang="zh-CN">
+                <strong>医学图像分割的 Bitter Lesson：从中心任务回到临床接口</strong>
+                <span>分割有价值，但它更准确的位置是工具和接口，而不是医学影像 AI 的终极目标。</span>
+              </div>
+              <span class="home-writing-item__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
           <p class="section-link section-link--compact"><a href="/blog">View all writing <span aria-hidden="true">→</span></a></p>
         </div>
       </section>
